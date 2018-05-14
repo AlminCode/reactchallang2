@@ -1,0 +1,189 @@
+/* .filter{
+  background-color: #409CD1;
+  width:260px;
+  height: 51px;
+  position: absolute;
+  height: 51px;
+} */
+/* 
+.filter--title{
+  padding-left:10%;
+  padding-top:5%;
+  font-weight: bold;
+  font-size: 14px;
+  color: #FFFFFF;
+  line-height: 20px;
+}
+
+.departureBox{
+  margin-top:5%;
+}
+
+.departureBox--title{
+  font-size: 14px;
+  font-weight: bold;
+} */
+
+body {
+  font-family: Arial, Helvetica, sans-serif ,Roboto;
+  background-color:#F2F2F2
+}
+/* 
+.inlineBox{
+  font-weight: bold;
+  margin-left: 7%;
+  margin-top: 5%;
+}
+
+.tour-container{
+  width: 850px;
+  height: 238px;
+  border: 1px solid;
+}
+
+.image-container{
+  width: 238px;
+  height: 238px;
+  border: 1px solid;
+  float:left;
+}
+
+.data-container{
+  width: 371px;
+  height: 238px;
+  border: 1px solid;
+  float:left;
+}
+
+.info-container{
+  width:238px;
+  height: 238px;
+  border: 1px solid;
+  float:left
+}
+
+.duration-slider{
+  widows: 260px;
+  height:103px;
+  border: 1px solid;
+}
+
+.sortby{
+  height:43px;
+  border: 1px solid;
+}
+
+.sortby--label{
+  text-align: right;
+}
+
+.sortby--dropdown{
+  width:100px;
+  float:right;
+  border: 1px solid ;
+  height:43px
+}
+
+ */
+
+
+ .sortby--label{
+  text-align: right;
+}
+
+.filter-title{
+  font-weight: bold;
+  font-size: 14px;
+  padding-left:10%;
+}
+
+.filter-content{
+  padding-left: 47px;
+}
+
+.filter-box{
+  background-color: #409CD1;
+  width:260px;
+  height: 51px;
+  height: 51px;
+  margin-bottom: 1.1%;
+}
+
+.filter-label{
+  padding-left:10%;
+  padding-top:5%;
+  font-weight: bold;
+  font-size: 14px;
+  color:white;
+
+}
+
+.filter-container{
+  margin-top:10px;
+  background-color: #FFFFFF;
+  padding-top: 2.2%;
+  padding-bottom: 5.8%;
+}
+
+
+/* GRID */
+
+.grid {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-areas: "sort sort"
+                       "filter content";
+
+  grid-template-columns: 18.1vw 1fr;
+  grid-template-rows: 5.3vh 1fr;
+  grid-gap: 2.5vh 2.2vw;
+  padding: 6vh 10vw 0% 10vw;
+}
+
+.sort {
+  grid-area: sort;
+  background-color: red;
+  height: 43px
+}
+
+.content {
+  grid-area: content;
+  background-color: green;
+}
+
+.filter{
+  grid-area: filter;
+  width:260px;
+  height:41%
+}
+.box-1{
+  width: 16.5%;
+  height: 29.3vh;
+}
+.box-2{
+  width: 25.8%;
+  height: 29.3vh;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  background-color: yellow;
+  margin: 0 0 3.7vh 0;
+
+}
+
+
+@media only screen and (max-width: 768px) {
+  .grid {
+    grid-template-areas: "filter" 
+                         "sort" 
+                         "content";
+    grid-template-columns: 1fr;
+    grid-template-rows: calc(2.3% + 12% + 4.6%) 1.9% 1fr;
+  }
+
+  .row {
+    flex-direction: column; 
+  }
+}
