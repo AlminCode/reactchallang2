@@ -204,7 +204,7 @@ class App extends Component {
       byYearMonth: filteredData,
       loading: false,
       selectedTours:
-        filteredData[this.state.currentYear][this.state.currentMonth]
+        filteredData[2018][this.state.currentMonth]
     }));
 
     this.sortTours("rating");
